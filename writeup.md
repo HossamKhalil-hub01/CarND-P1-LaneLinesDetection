@@ -63,13 +63,13 @@ The next step is to find the lines using Hough Line Transform and with that we c
 
 My simple solution to approach this problem is :
 
-* First draw a ref line which is a line in the middle of image parralel to the x-axis that divides the image into two regions with a dead zone on each side to prevent overlapping.
+* First draw a reference line which is a line in the middle of image parralel to the x-axis that divides the image into two regions with a dead zone on each side to prevent overlapping.
 
  
 ![](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/blob/master/examples/ref_line.png)
 
 
-* There are two clusters of lines for each region (lane) after dividing the lines into these two groups i can just use any metho for the fitting problem.
+* There are two clusters of lines for each region (lane) after dividing the lines into these two groups i can just use any method for the fitting problem.
 
 * For each cluster I computed the lowest and the highest points and considered them as the begining and the end of the lane.
 
@@ -96,6 +96,5 @@ Another shortcoming could be the extreme exposure conditions, as in the challeng
 
 ## 3. Possible improvements
 
-A possible improvement would be to ...
 A possible improvement would be to use a real curve fitting techniques for example [numpy.polyfit](https://numpy.org/doc/1.18/reference/generated/numpy.polyfit.html) function can be used to fit each lane in one line
 Another potential improvement could be to improve the filtering stages to be more suitable for more real life cases.
