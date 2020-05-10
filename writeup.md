@@ -18,18 +18,18 @@ My pipeline consists of 5 main steps:
 
 ## In-Depth
 
-### 1.Color Masking:
+### 1. Color Masking:
 
 The first step is to perform color masking to filter out most of irrelevant data depending on the colors of the lane lines which is specially usefull for the final challenge.
 
-[image1]: ./examples/Color_Mask.png  "Color Mask"
+![](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/blob/master/examples/Color_Mask.png) 
 
 
 ### 2. Gaussian filtering and edge detection:
 
 Now it's much cleaner to perform edge detection on.
  
-[image2]: ./examples/Edge_Detection.png "Edge Detection"
+![](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/blob/master/examples/Edge_Detection.png)
 
 
 **Note** There is no need to bother tunning for the noise on the top of the image as it will be out of the area of interest anyways.
@@ -42,12 +42,12 @@ but rather it's a function of the image shape to be more robust.
 
 Assuming that the camera is centered on the vehicle.
 
-[image3]: ./examples/Region_mask.png "Region Mask"
+![](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/blob/master/examples/Region_mask.png)
 
 and here is the result after applying the region mask to the edge detection.
 
 
-[image4]: ./examples/Filtered_Edges.png "Filtered Edges"
+![](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/blob/master/examples/Filtered_Edges.png)
 
 
 ### 4.Hough Line Transform:
@@ -56,7 +56,7 @@ The next step is to find the lines using Hough Line Transform and with that we c
 
 
 
-[image5]: ./examples/Line_Segements.JPG "Line Segements"
+![](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/blob/master/examples/Line_Segements.JPG)
 
 
 ### 5. Filtering lines
@@ -66,7 +66,7 @@ My simple solution to approach this problem is :
 * First draw a ref line which is a line in the middle of image parralel to the x-axis that divides the image into two regions with a dead zone on each side to prevent overlapping.
 
  
-[image6]: ./examples/ref_line.png "Reference line"
+![](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/blob/master/examples/ref_line.png)
 
 
 * There are two clusters of lines for each region (lane) after dividing the lines into these two groups i can just use any metho for the fitting problem.
@@ -77,10 +77,10 @@ My simple solution to approach this problem is :
 **Results**
 
 
-[image7]: ./examples/Filtered_lanes.png "Filtered Lanes"
+![](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/blob/master/examples/Filtered_lanes.png)
 
 
-[image8]: ./examples/final.png "Final Result"
+![](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/blob/master/examples/final.png)
 
 
 ---
@@ -94,7 +94,7 @@ Another shortcoming could be the extreme exposure conditions, as in the challeng
 
 
 
-### 3. Possible improvements
+## 3. Possible improvements
 
 A possible improvement would be to ...
 A possible improvement would be to use a real curve fitting techniques for example [numpy.polyfit](https://numpy.org/doc/1.18/reference/generated/numpy.polyfit.html) function can be used to fit each lane in one line
