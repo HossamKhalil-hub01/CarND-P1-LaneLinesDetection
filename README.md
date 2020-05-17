@@ -67,7 +67,7 @@ This simple detection pipeline has several steps any of which can be used indivi
 5. Smoothing lane lines over several frames to reduce jittering.
 6. Drawing the results on the original image.
 
-#### Implementation Details
+### Implementation Details
 The following image is used as an illustration, the generated results can be found in [output_images/challenge4](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/tree/master/output_images/challenge4) folder.
 
 **Note**: this image is selected as it contains shadows and curvatures which makes it suitable for exploring each of the pipeline steps.
