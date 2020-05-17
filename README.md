@@ -30,27 +30,29 @@ As a part of Udacity's Self-Driving Cars ND
 This repository consists of:
 
 
-* ##### [Lanelines_Detection.py](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/blob/master/Lanelines_Detection.py):
+##### [Lanelines_Detection.py](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/blob/master/Lanelines_Detection.py):
 
-    The pipeline script written in python, it has the pipeline main function `Lanelines_detection()` that can be used for image or video processing.
+The pipeline script written in python, it has the pipeline main function `Lanelines_detection()` that can be used for image or video processing.
 
 
-* ##### [test_images](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/tree/master/test_images):
+##### [test_images](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/tree/master/test_images):
+
 A folder that contains multiple images used for testing.
 
-    **Note** images that are named callengeX.jpg (where X is a number) have harder conditions such as shadows and hard curvatures, which makes it harder for the detection tasks.
+**Note:** Images that are named callengeX.jpg (where X is a number) have harder conditions such as shadows and hard curvatures, which makes it harder for the detection tasks.
 
 
+##### [test_vids](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/tree/master/test_vids):
 
-* ##### [test_vids](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/tree/master/test_vids):
+A folder of videos for testing while the [challenge.mp4](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/blob/master/test_vids/challenge.mp4) video is the hardest.
 
-    A folder of videos for testing while the [challenge.mp4](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/blob/master/test_vids/challenge.mp4) video is the hardest.
+##### [output_images](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/tree/master/output_images):
 
-* ##### [output_images](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/tree/master/output_images):
-    Contains a folder for each test image and its results in each step of the pipeline.
+Contains a folder for each test image and its results in each step of the pipeline.
 
 
- *    ##### [output_vids](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/tree/master/output_vids):
+##### [output_vids](https://github.com/HossamKhalil-hub01/CarND-P1-LaneLinesDetection/tree/master/output_vids):
+
 Contains the results of processing each test video and an illustration for the pipeline  as a video for each important step (color thresholding , edge detection and lines detection).
 
 ---
